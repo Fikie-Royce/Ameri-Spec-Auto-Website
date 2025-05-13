@@ -1,0 +1,233 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #233047;
+}
+header {
+  background: #183049;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #22b8cf;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #22b8cf;
+}
+.hero {
+  background: linear-gradient(110deg, #183049 75%, #22b8cf 100%);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.hero-cta {
+  margin-top: 1.5rem;
+}
+.cta-btn {
+  background: #22b8cf;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.cta-btn:hover {
+  background: #16a3b7;
+}
+.about-intro, .testimonials {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(34,184,207,0.08);
+}
+.about-intro h2, .testimonials h2 {
+  margin-top: 0;
+  color: #22b8cf;
+}
+.testimonial-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.testimonial {
+  background: #f1fafe;
+  padding: 1.25rem;
+  border-radius: 10px;
+  min-width: 220px;
+  flex: 1;
+}
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #183049;
+  font-size: 0.97em;
+  font-weight: 700;
+}
+footer {
+  background: #183049;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+@media (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .testimonial-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Secondary section styling */
+.section-title {
+  margin: 2.5rem auto 0 auto;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  max-width: 700px;
+}
+.section-title h1 {
+  color: #183049;
+  margin-bottom: 0.4rem;
+}
+.service-list, .service-pricing,
+.service-faq, .parts-catalog,
+.blog-list, .contact-details, .live-chat, .booking-form-section {
+  max-width: 900px;
+  margin: 2rem auto 1rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(34,184,207,0.07);
+}
+
+/* Table styles */
+.pricing-table, .parts-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.pricing-table th, .pricing-table td,
+.parts-table th, .parts-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e6eaf3;
+  text-align: left;
+}
+.pricing-table th, .parts-table th {
+  background: #e9f8fa;
+  color: #26898f;
+}
+.pricing-table tr:last-child td,
+.parts-table tr:last-child td {
+  border-bottom: none;
+}
+.parts-table img {
+  border-radius: 4px;
+  background: #eaf6fa;
+}
+
+/* Blog styles */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.blog-post {
+  padding: 1.5rem;
+  background: #f1fafe;
+  border-radius: 13px;
+  box-shadow: 0 1px 3px rgba(34,184,207,0.05);
+}
+.blog-post h2 {
+  margin: 0 0 0.4rem 0;
+  color: #22b8cf;
+}
+.post-meta {
+  color: #808ba2;
+  font-size: 0.95em;
+  margin-bottom: 0.8rem;
+}
+
+/* Form styles */
+.booking-form, .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+.booking-form input, .booking-form select,
+.contact-form input, .contact-form textarea {
+  padding: 0.7rem 1rem;
+  border: 1px solid #cbeafe;
+  border-radius: 7px;
+  font-size: 1rem;
+  transition: border-color 0.18s;
+}
+.booking-form input:focus, .booking-form select:focus,
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #22b8cf;
+  outline: none;
+}
+.booking-form label,
+.contact-form label {
+  color: #183049;
+  font-weight: 500;
+  margin-top: 0.45rem;
+}
+.confirmation-msg {
+  background: #e6fcf5;
+  color: #26898f;
+}
+
+/* Responsive for new pages */
+@media (max-width: 780px) {
+  .section-title, .service-list, .service-pricing, .service-faq, .parts-catalog,
+  .blog-list, .contact-details, .live-chat, .booking-form-section {
+    padding: 1.15rem;
+    max-width: 98vw;
+  }
+  .parts-table th, .parts-table td,
+  .pricing-table th, .pricing-table td {
+    padding: 0.5rem;
+  }
+  .blog-post {
+    padding: 1rem;
+  }
+}

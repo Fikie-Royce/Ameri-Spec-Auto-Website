@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ameri Spec Auto Fix & Parts</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ameri Spec Auto</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="parts.html">Parts Store</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="blog.html">Blog & News</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-title">
+      <h1>Contact & Location</h1>
+      <p>Reach out with questions, feedback, or book your visit!</p>
+    </section>
+    <section class="contact-details">
+      <h2>Our Workshop</h2>
+      <p><strong>Address:</strong> Burma Camp, Accra</p>
+      <p><strong>Email:</strong> <a href="amerispecautofix@gmail.com"></a> amerispecautofix@mail.com</p>
+      <p><strong>Phone:</strong> <a href="tel:+233234567890">+233-23-456-7890</a></p>
+      <div class="map-embed" style="margin: 1rem 0 2rem;"><iframe src="https://www.google.com/maps?q=Burma Camp,+GHA&output=embed" width="100%" height="230" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <h2>Contact Form</h2>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your Name*</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button class="cta-btn" type="submit">Send Message</button>
+      </form>
+      <div id="contactConfirmation" class="confirmation-msg" style="display:none; margin:2rem 0; padding:1.5rem; background:#e6fcf5; border-radius:10px; text-align:center; color:#26898f; font-weight:600;">Thanks for reaching out! We'll get back to you soon.</div>
+    </section>
+    <section class="live-chat">
+      <h2>Live Chat (Coming Soon)</h2>
+      <p>Speak with a specialist directly from our website. Live chat support is launching soon!</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; AshTech Solutions | 2025 Ameri Spec Auto Fix & Parts | All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('contactConfirmation').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

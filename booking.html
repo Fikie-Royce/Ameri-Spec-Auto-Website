@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Ameri Spec Auto Fix & Parts</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ameri Spec Auto</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="parts.html">Parts Store</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="blog.html">Blog & News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-title">
+      <h1>Book a Service</h1>
+      <p>Schedule your repair or mobile service appointment online.</p>
+    </section>
+    <section class="booking-form-section">
+      <form id="bookingForm" class="booking-form">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" required />
+        <label for="contact">Contact # / Email*</label>
+        <input type="text" id="contact" name="contact" required />
+        <label for="vehicle">Vehicle (Make/Model)</label>
+        <input type="text" id="vehicle" name="vehicle" />
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" />
+        <label for="service">Service Required</label>
+        <select id="service" name="service">
+          <option>Engine Diagnostics</option>
+          <option>Brake Service</option>
+          <option>Oil Change</option>
+          <option>Battery/Alternator</option>
+          <option>General Maintenance</option>
+          <option>Mobile Service</option>
+        </select>
+        <button class="cta-btn" type="submit">Book Appointment</button>
+      </form>
+      <div id="bookingConfirmation" class="confirmation-msg" style="display:none; margin:2rem 0; padding:1.5rem; background:#e6fcf5; border-radius:10px; text-align:center; color:#26898f; font-weight:600;">Your appointment is booked! We'll confirm soon.</div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Ameri Spec Auto Fix & Parts | All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('bookingForm').style.display = 'none';
+      document.getElementById('bookingConfirmation').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
